@@ -59,14 +59,13 @@ last_modified_at: 2020-04-05
 ## I. Primitive Type 데이터의 값은 '복사'됩니다.  
 
 ```js
-// 문자열 메서드는 문자열을 변형하지 않음
-var bar = "baz";
-console.log(bar);        // 처리하기 전의 bar 의 값은 baz 입니다.
-bar.toUpperCase();       // bar 에 .toUpperCase() 처리를 가하더라도,
-console.log(bar);        // bar 의 값은 변경되지 않고 여전히 baz 입니다.
-
-// 할당은 원시 값에 새로운 값을 부여 (변형이 아님)
-bar = bar.toUpperCase(); // BAZ
+let a = 3;
+let b = a;
+console.log(a);         // 처리하기 전의 a의 값은 3 입니다.
+console.log(b);         // 처리하기 전의 b의 값은 3 입니다.
+a = 10;                 // a에 새롭게 10을 넣어줍니다.
+console.log(a);         // 처리 후 a의 값은 변경되어 10 입니다.
+console.log(b);         // 처리 후 b의 값은 여전히 3 입니다.
 ```
 
 &nbsp;원시 자료형은 변하지 않습니다.  
@@ -101,23 +100,6 @@ console.log(origin.b); // result 1000
 &nbsp;위 예제에서, copy에 할당된것은 origin의 메모리 주소입니다.  
 &nbsp;그로 인해, copy의 값을 바꿨지만 사실은 origin의 메모리 주소에 들어있는 값을 바꾼 것이므로, origin의 값도 변경됩니다.  
 &nbsp;(출처: [[ JavaScript ] 원시타입(primitive type)과 참조타입(reference type)](https://ryulog.tistory.com/140))
-
-<br>  
-
-
-
-
-# 평가 전략(Evaluation Strategy)  
-
-&nbsp;위키백과에서는 평가 전략에 관하여 아래와 같이 서술하고 있습니다.  
-
->평가 전략(영어: Evaluation Strategy)은, 프로그래밍 언어에서 함수 호출의 아규먼트(argument)의 순서를 언제 결정하고 함수에 어떤 종류의 값을 통과시킬지 결정하는 것이다.  
->(출처 : [평가 전략 (컴퓨터 프로그래밍)](https://ko.wikipedia.org/wiki/%ED%8F%89%EA%B0%80_%EC%A0%84%EB%9E%B5_(%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)))  
-
-&nbsp;즉, '함수에 인자로 어떤 것을 넣어주느냐에 따라서 함수가 어떻게 실행될지에 대한 방법(?)을 결정하는 것'이라고 볼 수 있습니다.  
-&nbsp;(출처 : [(자알쓰) call by value vs call by reference](https://perfectacle.github.io/2017/10/30/js-014-call-by-value-vs-call-by-reference/))  
-  
-&nbsp;평가전략은 `call by value` 와 `call by reference` 등으로 나뉘므로, 아래에서 이에 관하여 알아보겠습니다.  
 
 <br>  
 
@@ -204,6 +186,20 @@ console.log(obj === objCopy) // false
 &nbsp;그러므로, 이후 `objCopy`에 `{ p2: 100 }`가 '재할당'되면, `objCopy`는 이제 새로운 객체 `{ p2: 100 }`의 '새로운 주소를 참조하게' 됩니다.  
 &nbsp;그러므로 두 변수를 비교하면, 이제는 각자 다른 주소를 참조하므로 `false`가 출력됩니다.  
 
+&nbsp;다음과 같은 예제 역시 생각해 보았습니다.  
+```js
+let a = { p1: 10 };
+let b = a;
+console.log(a);         // 처리하기 전의 a의 값은 { p1: 10 } 입니다.
+console.log(b);         // 처리하기 전의 b의 값은 { p1: 10 } 입니다.
+a = { p2: 100 };                 // a에 새롭게 { p2: 100 } 을 넣어줍니다.
+console.log(a);         // 처리 후 a의 값은 변경되어 { p2: 100 } 입니다.
+console.log(b);         // 처리 후 b의 값은 여전히 { p1: 10 } 입니다.
+```  
+&nbsp;이 예제 역시, `a`와 `b`가 처리 전에는 똑같이 `{ p1: 10 }`의 주소를 참조하고 있으므로, 두 값이 동일하게 출력됩니다.  
+  
+&nbsp;그러나, `a`에 새롭게 `{ p2: 100 }`을 넣어준 후에는, `a`는 새롭게 할당된 `{ p2: 100 }` 의 주소를 참조하고, `b`는 여전히 앞에서 참조하고 있는 `{ p1: 10 }`의 주소를 참조하고 있습니다.  
+  
 ### Reference Type 데이터인 인자를, 함수내에서 변경(속성만 변경)하면 어떻게 될까?  
 ```js
 const o = { p1: 1 }
