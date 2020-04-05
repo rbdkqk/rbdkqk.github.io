@@ -36,7 +36,7 @@ last_modified_at: 2020-04-05
 
 # 데이터 타입 (자료형)  
 
-&nbsp;먼저 7가지의 데이터 타입을 짚고 넘어가겠습니다.
+&nbsp;먼저 데이터 타입을 짚고 넘어가겠습니다.
  1. Primitive Type  
  &nbsp;`number`, `string`, `boolean`, `undefined`, `null` 등이 이에 속합니다.  
  &nbsp;이 값들은 더이상 단순화할 수 없어 원시적(primitive)이라고 하며, 자바스크립트에서 활용할 수 있는 가장 단순한 형태의 데이터입니다.  
