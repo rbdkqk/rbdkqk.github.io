@@ -242,6 +242,7 @@ function countWords(input) {
  - [[자바스크립트] ESLint로 소스 코드의 문제 찾기](https://www.daleseo.com/js-eslint/)  
  - [linter를 이용한 코딩스타일과 에러 체크하기](https://subicura.com/2016/07/11/coding-convention.html)  
  - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)  
+ - [Airbnb JavaScript 스타일 가이드(번역)](https://github.com/ParkSB/javascript-style-guide)  
  - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)  
  - [ESLint(TSLint)와 Prettier 함께 사용하기](https://pravusid.kr/javascript/2019/03/10/eslint-prettier.html)  
 
