@@ -141,6 +141,9 @@ function countWords(input) {
  - [facebook/jest](https://github.com/facebook/jest) 
  - [Jest로 기본적인 테스트 작성하기](https://www.daleseo.com/jest-basic/)  
  - [Jest Tutorial for Beginners: Getting Started With JavaScript Testing](https://www.valentinog.com/blog/jest/)  
+ - [[Jest] Javascript Test 코드 작성하기](https://hees-dev.tistory.com/57)  
+ - [Jest로 테스트 전/후 처리하기](https://www.daleseo.com/jest-before-after/)  
+ - 
  
 
 <!--
@@ -239,12 +242,17 @@ function countWords(input) {
 
 &nbsp;ESlint의 사용 등에 관하여 다음과 같은 문서들을 참고하여 추가 공부하려고 합니다. (다른 분께서 작성하신 글을 몇 가지 링크하였습니다. 이 부분의 삭제요청이 들어온다면 즉시 반영하도록 하겠습니다.)  
  - [ESLint 공식문서](https://eslint.org/docs/user-guide/getting-started)  
+ - [ESLint 공식문서 - Specifying Globals](https://eslint.org/docs/user-guide/configuring#specifying-globals)  
+ <!--   /* global var1, var2 */ 부분 공부해야 함    -->
+ - [Configuring ESLint - Specifying Environments](https://eslint.org/docs/user-guide/configuring#specifying-environments)  
  - [[자바스크립트] ESLint로 소스 코드의 문제 찾기](https://www.daleseo.com/js-eslint/)  
  - [linter를 이용한 코딩스타일과 에러 체크하기](https://subicura.com/2016/07/11/coding-convention.html)  
  - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)  
  - [Airbnb JavaScript 스타일 가이드(번역)](https://github.com/ParkSB/javascript-style-guide)  
  - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)  
  - [ESLint(TSLint)와 Prettier 함께 사용하기](https://pravusid.kr/javascript/2019/03/10/eslint-prettier.html)  
+ - [VS Code에서 ESLint 사용하기 - 1. 기본 설정](https://noooop.tistory.com/entry/VS-Code%EC%97%90%EC%84%9C-ESLint-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-1-%EA%B8%B0%EB%B3%B8-%EC%84%A4%EC%A0%95)  
+
 
 <!--
 ## 3. ESLint 공식문서 살펴보기
