@@ -138,12 +138,13 @@ function countWords(input) {
 ## 3. 참고자료  
 &nbsp;Jest의 사용 등에 관하여 다음과 같은 문서들을 참고하여 추가 공부하려고 합니다. (다른 분께서 작성하신 글을 몇 가지 링크하였습니다. 이 부분의 삭제요청이 들어온다면 즉시 반영하도록 하겠습니다.)  
  - [Jest 공식 문서](https://jestjs.io/)  
+ - [Jest - API Reference(공식 문서)](https://jestjs.io/docs/en/api)  
  - [facebook/jest](https://github.com/facebook/jest) 
  - [Jest로 기본적인 테스트 작성하기](https://www.daleseo.com/jest-basic/)  
  - [Jest Tutorial for Beginners: Getting Started With JavaScript Testing](https://www.valentinog.com/blog/jest/)  
  - [[Jest] Javascript Test 코드 작성하기](https://hees-dev.tistory.com/57)  
  - [Jest로 테스트 전/후 처리하기](https://www.daleseo.com/jest-before-after/)  
- - 
+
  
 
 <!--
