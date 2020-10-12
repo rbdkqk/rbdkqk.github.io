@@ -103,11 +103,11 @@ last_modified_at: 2020-10-12
 
 &nbsp;'와이어 프레임'은 제공하는 서비스의 기본적인 형태라고 이해하였습니다. 이는 아래와 같이 작성했습니다.
 
-![1012-wireFrame](../assets/img/project-1/1012-wireFrame.png)
+![1012-wireFrame](https://user-images.githubusercontent.com/47794257/95770490-6f12f900-0cf4-11eb-8521-6ce970b8fdb5.png)
 
 &nbsp;'기능 Flow'는 서비스가 전체적으로 어떤 흐름으로 진행되는지라고 이해하였으며, 아래와 같이 작성했습니다.
 
-![1012-wireFrame](../assets/img/project-1/1012-featureFlow.png)
+![1012-featureFlow](https://user-images.githubusercontent.com/47794257/95770464-63bfcd80-0cf4-11eb-96ee-cd33df9ce893.png)
 
 <br>
 <br>
@@ -127,7 +127,7 @@ last_modified_at: 2020-10-12
 
 &nbsp;데이터베이스 스키마는 아래와 같이 작성하였습니다. 역시 추가되는 기능이 있다면 그를 위해 추가될 것으로 보입니다.
 
-![1012-wireFrame](../assets/img/project-1/1012-DBscima.png)
+![1012-DBscima](https://user-images.githubusercontent.com/47794257/95770414-5571b180-0cf4-11eb-9aaa-6838a7677b10.png)
 
 - user : 가입하고 서비스를 이용하는 회원들의 정보입니다.
 - question : 회원들이 올리는 질문 글입니다.
