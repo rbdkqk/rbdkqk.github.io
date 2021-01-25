@@ -1,6 +1,6 @@
 ---
 title: 'JavaScript ES6 문법 공부'
-excerpt: 'Arrow Function / let & const / Default Parameter Values / Function Rest Parameter'
+excerpt: 'Arrow Function / let & const / Default Parameter Values / Function Rest Parameter' / Destructuring Assignment'
 
 categories:
   - studynote
